@@ -1,12 +1,13 @@
 GPU_ID: '0' 
-model_restore: 'exp/logs/bmx-trees/checkpoint_50000' 
+model_restore: 'exp/logs/farside/checkpoint_20000' 
 
-test_dir: exp/results/bmx-trees
-dir_video: 'inputs/videos/bmx-trees' 
-dir_mask: 'inputs/masks/bmx-trees'
+test_dir: exp/results/farside
+dir_video: 'inputs/videos/farside' 
+dir_mask: 'inputs/masks/farside'
 
 
-img_shapes: [320, 600]
-coarse_only: False 
-use_refine: True 
+img_shapes: [160, 720]
+# img_shapes: [320, 600] -- for bmx-trees
+coarse_only: False
+use_refine: True
 padding: 'SAME'

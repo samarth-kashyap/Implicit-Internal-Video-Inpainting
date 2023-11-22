@@ -12,14 +12,14 @@ lr: 0.0002
 
 max_iters: 50000
 max_epochs: 20000
-print_iters: 10
+print_iters: 250
 summary_iters: 2500
 model_iters: 10000
 
 
 # Network
-coarse_only: True 
-use_refine: False
+coarse_only: False
+use_refine: True
 padding: 'SAME'
 
 

@@ -23,9 +23,11 @@ if __name__ == "__main__":
             model = StackModel()
 
     model.load_weights(FLAGS.model_restore)
-    test_ds = dl.build_dataset_video(FLAGS.dir_video, FLAGS.dir_mask, FLAGS.dir_mask, 1, 1, FLAGS.img_shapes[0], FLAGS.img_shapes[1])
+    batch_size = 1
+    num_epochs = 1
+    test_ds = dl.build_dataset_video(FLAGS.dir_video, FLAGS.dir_mask, FLAGS.dir_mask, batch_size, num_epochs, FLAGS.img_shapes[0], FLAGS.img_shapes[1])
 
-    @tf.function
+    # @tf.function
     def testing_step(batch_data):
         batch_pos = batch_data[0]
         mask = batch_data[1]
