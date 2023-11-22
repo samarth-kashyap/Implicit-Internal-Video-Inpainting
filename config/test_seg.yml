@@ -1,4 +1,4 @@
-GPU_ID: '1' 
+GPU_ID: '0' 
 model_restore: 'exp/logs/blackswan-mask/checkpoint_8000' 
 
 test_dir: exp/results/blackswan-mask
