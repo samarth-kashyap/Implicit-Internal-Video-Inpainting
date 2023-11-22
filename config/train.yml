@@ -1,12 +1,12 @@
 GPU_ID: '0' 
 model_restore: '' 
 
-log_dir: exp/logs/bmx-trees
-dir_video: 'inputs/videos/bmx-trees' 
-dir_mask: 'inputs/masks/bmx-trees'
+log_dir: exp/logs/farside
+dir_video: 'inputs/videos/farside' 
+dir_mask: 'inputs/masks/farside'
 
 # training
-img_shapes: [320, 600]
+img_shapes: [160, 720]
 batch_size: 5
 lr: 0.0002
 
@@ -18,8 +18,8 @@ model_iters: 10000
 
 
 # Network
-coarse_only: False 
-use_refine: True 
+coarse_only: True 
+use_refine: False
 padding: 'SAME'
 
 
