@@ -6,11 +6,11 @@ dir_video: 'inputs/videos/farside'
 dir_mask: 'inputs/masks/farside'
 
 # training
-img_shapes: [160, 720]
-batch_size: 5
-lr: 0.0002
+img_shapes: [160, 360]
+batch_size: 8
+lr: 0.00015
 
-max_iters: 50000
+max_iters: 100000
 max_epochs: 20000
 print_iters: 250
 summary_iters: 2500

@@ -6,7 +6,7 @@ dir_video: 'inputs/videos/farside'
 dir_mask: 'inputs/masks/farside'
 
 
-img_shapes: [160, 720]
+img_shapes: [160, 360]
 # img_shapes: [320, 600] -- for bmx-trees
 coarse_only: False
 use_refine: True
