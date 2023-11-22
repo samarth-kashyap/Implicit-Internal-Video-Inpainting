@@ -12,7 +12,7 @@ lr: 0.0002
 
 max_iters: 50000
 max_epochs: 20000
-print_iters: 500
+print_iters: 10
 summary_iters: 2500
 model_iters: 10000
 
