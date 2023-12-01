@@ -1,19 +1,19 @@
 GPU_ID: '0' 
-model_restore: '' 
+model_restore: 'exp/logs/farside/checkpoint_130000' 
 
-log_dir: exp/logs/farside
+log_dir: exp/logs/farside_refine
 dir_video: 'inputs/videos/farside' 
 dir_mask: 'inputs/masks/farside'
 
 # training
 img_shapes: [160, 360]
-batch_size: 8
-lr: 0.00015
+batch_size: 5
+lr: 0.00008
 
-max_iters: 100000
+max_iters: 125000
 max_epochs: 20000
-print_iters: 250
-summary_iters: 2500
+print_iters: 200
+summary_iters: 2000
 model_iters: 10000
 
 
@@ -24,9 +24,9 @@ padding: 'SAME'
 
 
 # loss
-stabilization_loss: False 
+stabilization_loss: True
 ambiguity_loss: False
 l1_loss: True
 l1_loss_alpha: 1.
-stabilization_loss_alpha: 0.2 
+stabilization_loss_alpha: 0.3
 ambiguity_loss_alpha: 0.1

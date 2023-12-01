@@ -1,7 +1,7 @@
 GPU_ID: '0' 
-model_restore: 'exp/logs/farside/checkpoint_20000' 
+model_restore: 'exp/logs/farside_refine/checkpoint_90000' 
 
-test_dir: exp/results/farside
+test_dir: exp/results/farside_refine_90k
 dir_video: 'inputs/videos/farside' 
 dir_mask: 'inputs/masks/farside'
 
